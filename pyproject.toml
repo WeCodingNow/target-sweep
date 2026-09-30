@@ -1,0 +1,17 @@
+[project]
+name = "target-sweep"
+version = "0.1.0"
+description = "Interactively find and delete Rust (cargo) build directories"
+readme = "README.md"
+authors = [
+    { name = "Alexey Andreev", email = "al.andreev@corp.mail.ru" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+target-sweep = "target_sweep:main"
+
+[build-system]
+requires = ["uv_build>=0.9.7,<0.10.0"]
+build-backend = "uv_build"
